@@ -1,5 +1,16 @@
 # HTML前端面试3+1
 >这是一个答案总结，选自回答里我觉得比较好的答案，再动手验证，以驱动自己学习，方便自己复习.答案来自于回答者 [github](https://github.com/haizlin/fe-interview/issues/2)
+
+## 第9天 浏览器内多个标签页之间的通信方式有哪些？
+>WebSocket （可跨域）  [阮一峰websocket](http://www.ruanyifeng.com/blog/2017/05/websocket.html)  
+postMessage（可跨域）[postMessage](https://blog.csdn.net/huangpb123/article/details/83692019)   
+localStorage  
+Cookies  
+下面的我都不知道  
+Worker之SharedWorker  
+Server-Sent Events  
+BroadcastChannel  
+
 ## 第43天 如何让元素固定在页面底部？有哪些比较好的实践？
 
 **sticky footer 布局**  
