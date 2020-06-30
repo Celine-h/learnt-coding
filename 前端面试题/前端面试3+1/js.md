@@ -53,3 +53,26 @@ return “total : ” + m;
 ```
 
 参考：https://www.jianshu.com/p/d8f2cc2c9458
+
+---
+## 第250天 写一个方法判断大括号{}是否闭合
+  ```bash
+    function isClosed(str) {
+        let arr = [...str];
+        let stack = [];
+
+        for (let i = 0; i < arr.length; ++i) {
+            if (arr[i] == "{") {
+                stack.push("{");
+            } else if (arr[i] == "}") {
+                if (stack.length === 0) {
+                    return false;
+                }
+                console.log(arr[i], stack)
+                stack.pop();
+            }
+        }
+
+        return stack.length === 0;
+      }
+```
