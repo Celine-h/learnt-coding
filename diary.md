@@ -1,3 +1,3 @@
-今天我想写一篇日记
-嗯，我一般心情不好的时候才会写日记。
-不知道自己是因为懒，还是因为真的是间歇性发疯，才让自己是现在这种状态。
+diary2020/8/9
+To get what you want , fight for it. and enjoy the journey.
+Because you have nothing and no backup.
