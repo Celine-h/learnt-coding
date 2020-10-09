@@ -374,8 +374,9 @@ var obj = {
 	a: 10,
 	getA: foo
 }
-active(obj.getA);
+active(obj.getA);//20
 ```
+
 **原型中的this**
 ```bash
 //原型中的this
