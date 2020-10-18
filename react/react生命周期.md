@@ -52,3 +52,30 @@ render函数会插入jsx生成的dom结构，react会生成一份虚拟dom树，
 
 ## React 16.4之后
 ![reactLifeCircleNew.jpg](../images/reactLifeCircleNew.jpg)
+
++ 初始化阶段  
+  + constructor 构造函数
+  + getDefaultProps props默认值
+  + getInitialState state默认值
+
++ 挂载阶段
+  + staticgetDerivedStateFromProps(props,state)
+  + render
+  + componentDidMount
+>getDerivedStateFromProps：组件每次被 rerender的时候，包括在组件构建之后(虚拟 dom之后，实际 dom挂载之前)，每次获取新的 props或 state之后；每次接收新的props之后都会返回一个对象作为新的 state，返回null则说明不需要更新 state；配合 componentDidUpdate，可以覆盖 componentWillReceiveProps的所有用法
+
++ 更新阶段
+  + staticgetDerivedStateFromProps(props,state)
+  + shouldComponentUpdate
+  + render
+  + getSnapshotBeforeUpdate(prevProps,prevState)
+  + componentDidUpdate
+>getSnapshotBeforeUpdate：触发时间: update发生的时候，在 render之后，在组件 dom渲染之前；返回一个值，作为 componentDidUpdate的第三个参数；配合 componentDidUpdate, 可以覆盖 componentWillUpdate的所有用法
+
++ 卸载阶段  
+ componentWillUnmount
++ 错误处理    
+componentDidCatch
+>React16新的生命周期弃用了 componentWillMount、componentWillReceivePorps，componentWillUpdate新增了 getDerivedStateFromProps、getSnapshotBeforeUpdate来代替弃用的三个钩子函数。
+
+React16并没有删除这三个钩子函数，但是不能和新增的钩子函数混用， React17将会删除这三个钩子函数，新增了对错误的处理（ componentDidCatch）
