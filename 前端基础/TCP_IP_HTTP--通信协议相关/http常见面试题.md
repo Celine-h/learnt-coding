@@ -2,10 +2,14 @@
 + TCP三次握手
 + TCP为什么要三次握手
 + 断开连接时TCP四次握手
-+ TCP握手的原因
++ 为什么建立连接是三次握手，而关闭连接却是四次挥手呢？
 + HTTP的缺点与HTTPS
 + HTTP请求报文与响应报文格式
 + 介绍https握手过程
++ 中间人攻击
++ HTTPS 握手过程中，客户端如何验证证书的合法性 
++ 简单讲解一下 http2 的多路复用 
++ [HTTP请求中的referrer和Referrer-Policy](https://blog.csdn.net/thlzjfefe/article/details/102521707)
 
 
 # 从URL到页面展现发生了什么

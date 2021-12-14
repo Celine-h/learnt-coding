@@ -52,6 +52,10 @@ setTimeout(()=>{
 + 在执行宏任务 setTimeout1 时会生成微任务 Promise2 ，放入微任务队列中，接着先去清空微任务队列中的所有任务，输出 Promise2
 + 清空完微任务队列中的所有任务后，就又会去宏任务队列取一个，这回执行的是 setTimeout2
 
+**面试题**  
+1. https://juejin.cn/post/6844903729171283975
+  ps:谷歌浏览器打印结果和文中描述不太一致
+
 ## Node 中的 Event Loop
 
 **1. Node 简介**          
