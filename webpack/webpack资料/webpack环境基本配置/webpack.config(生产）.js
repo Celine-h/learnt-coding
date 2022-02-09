@@ -78,7 +78,7 @@ module.exports = {
         // 在package.json中eslintConfig --> airbnb
         test: /\.js$/,
         exclude: /node_modules/,
-        // 优先执行
+        // 优先执行,编译前检查
         enforce: 'pre',
         loader: 'eslint-loader',
         options: {
@@ -91,7 +91,8 @@ module.exports = {
          1. 基本js兼容性处理 --> @babel/preset-env
            问题：只能转换基本语法，如promise高级语法不能转换
          2. 全部js兼容性处理 --> @babel/polyfill  
-           问题：我只要解决部分兼容性问题，但是将所有兼容性代码全部引入，体积太大了~
+           问题：1.我只要解决部分兼容性问题，但是将所有兼容性代码全部引入，体积太大了~
+                 2.污染全局变量，给很多类的原型链都作了修改。
          3. 需要做兼容性处理的就做：按需加载  --> core-js
      */
       {

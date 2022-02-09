@@ -1,4 +1,5 @@
 /*
+  可以参考：https://www.cnblogs.com/bride/p/11199429.html
   HMR: hot module replacement 热模块替换 / 模块热替换
     作用：一个模块发生变化，只会重新打包这一个模块（而不是打包所有模块） 
       极大提升构建速度
